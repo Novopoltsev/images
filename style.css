@@ -6,10 +6,35 @@ body {
     margin: 0;
 }
 .download {
+position: relative;
 height: 500px;
-background-image: url(./image.jpg);
+/* background-image: url(./image.jpg);
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;
+background-size: cover; */
+
+}
+.download::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+/* .download ::before {
+content: ;
+
+} */
+.download_img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
 }
